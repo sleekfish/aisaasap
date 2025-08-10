@@ -15,14 +15,19 @@ function App() {
     setUser(userData);
   };
 
+  const handleLogout = () => {
+    setUser(null);
+    setProcessedDocument(null);
+  };
+
   const handleDocumentProcessed = (result) => {
     setProcessedDocument(result);
   };
 
   return (
-    <Router>
-      <div className="min-h-screen bg-gray-50">
-        {user && <Header user={user} onLogout={() => setUser(null)} />}
+    <div className="min-h-screen bg-black">
+      <Router>
+        {user && <Header user={user} onLogout={handleLogout} />}
         <Routes>
           <Route 
             path="/" 
@@ -50,8 +55,8 @@ function App() {
             element={<Settings user={user} />} 
           />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
