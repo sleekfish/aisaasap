@@ -135,7 +135,7 @@ const Settings: React.FC<SettingsProps> = ({ user }) => {
           {/* Content */}
           <div className="lg:col-span-3">
             <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800 p-6">
-              {/* Profile Tab */}
+              <h3 className="text-lg font-semibold text-white mb-4">Active AI Agents</h3>
               {activeTab === 'profile' && (
                 <div>
                   <h2 className="text-xl font-semibold text-white mb-6">Profile Information</h2>
@@ -400,8 +400,8 @@ const Settings: React.FC<SettingsProps> = ({ user }) => {
 
                         <div className="flex items-center justify-between p-4 bg-blue-900/20 rounded-lg border border-blue-500/30">
                           <div>
-                            <p className="font-medium text-blue-100">AI Agent Orchestration</p>
-                            <p className="text-sm text-blue-200">Enable multi-agent processing with Document Intelligence, Healthcare Analytics, Contract Intelligence, Perplexity Fact-Check, and Compliance Guardian agents</p>
+                            <p className="font-medium text-blue-100">Perplexity AI Integration</p>
+                            <p className="text-sm text-blue-200">Enable real-time fact-checking and verification</p>
                           </div>
                           <input
                             type="checkbox"
@@ -563,29 +563,47 @@ const Settings: React.FC<SettingsProps> = ({ user }) => {
                         </div>
                       </div>
                     </div>
-
+                    <Users className="w-4 h-4 text-blue-400" />
                     {/* Documentation */}
                     <div>
-                      <h3 className="text-lg font-medium text-white mb-4">Documentation & Resources</h3>
-                      <div className="grid md:grid-cols-2 gap-4">
+                    <p className="font-medium text-white">Resume Generation</p>
+                    <p className="text-sm text-gray-400">247 tasks completed</p>
                         <button className="flex items-center space-x-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition-colors duration-200 border border-gray-700">
                           <FileText className="w-5 h-5 text-blue-400" />
                           <div className="text-left">
                             <p className="font-medium text-white">API Documentation</p>
-                            <p className="text-sm text-gray-400">Complete integration guide</p>
+                    <FileText className="w-4 h-4 text-green-400" />
                           </div>
                           <ExternalLink className="w-4 h-4 text-gray-400 ml-auto" />
-                        </button>
-                        <button className="flex items-center space-x-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition-colors duration-200 border border-gray-700">
+                    <p className="font-medium text-white">Medical Summarization</p>
+                    <p className="text-sm text-gray-400">89 tasks completed</p>
                           <Zap className="w-5 h-5 text-green-400" />
                           <div className="text-left">
                             <p className="font-medium text-white">Code Examples</p>
                             <p className="text-sm text-gray-400">Ready-to-use snippets</p>
-                          </div>
+                    <Clock className="w-4 h-4 text-purple-400" />
                           <ExternalLink className="w-4 h-4 text-gray-400 ml-auto" />
                         </button>
-                      </div>
-                    </div>
+                    <p className="font-medium text-white">Pre-Call Briefing</p>
+                    <p className="text-sm text-gray-400">156 tasks completed</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-orange-900/50 rounded-full flex items-center justify-center">
+                    <Globe className="w-4 h-4 text-orange-400" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Web Extraction</p>
+                    <p className="text-sm text-gray-400">392 tasks completed</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-red-900/50 rounded-full flex items-center justify-center">
+                    <Shield className="w-4 h-4 text-red-400" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Safety & Compliance</p>
+                    <p className="text-sm text-gray-400">1,247 tasks completed</p>
                   </div>
                 </div>
               )}

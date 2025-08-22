@@ -18,7 +18,8 @@ import {
   Search,
   Shield,
   AlertTriangle,
-  Info
+  Info,
+  Users
 } from 'lucide-react';
 
 interface ResultsProps {
@@ -188,45 +189,17 @@ const Results: React.FC<ResultsProps> = ({ document }) => {
                 <div>
                   <div className="flex items-center space-x-3 mb-6">
                     <div className="w-8 h-8 bg-blue-900/50 rounded-full flex items-center justify-center">
-                      <Brain className="w-4 h-4 text-blue-400" />
+                      <Users className="w-4 h-4 text-blue-400" />
                     </div>
                     <div>
-                      <h2 className="text-xl font-semibold text-white">AI-Generated Summary</h2>
-                      <p className="text-sm text-gray-400">Powered by GPT-4 and Perplexity AI</p>
-                
-                {/* AI Agents Status */}
-                <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
-                  <div className="flex items-center space-x-2 p-2 bg-blue-900/20 rounded-lg border border-blue-500/30">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-blue-300">Document Intelligence</span>
-                  </div>
-                  <div className="flex items-center space-x-2 p-2 bg-green-900/20 rounded-lg border border-green-500/30">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-green-300">Healthcare Analytics</span>
-                  </div>
-                  <div className="flex items-center space-x-2 p-2 bg-purple-900/20 rounded-lg border border-purple-500/30">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-purple-300">Contract Intelligence</span>
-                  </div>
-                  <div className="flex items-center space-x-2 p-2 bg-orange-900/20 rounded-lg border border-orange-500/30">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-orange-300">Perplexity Fact-Check</span>
-                  </div>
-                  <div className="flex items-center space-x-2 p-2 bg-red-900/20 rounded-lg border border-red-500/30">
-                    <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-red-300">Compliance Guardian</span>
-                  </div>
-                  <div className="flex items-center space-x-2 p-2 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                    <span className="text-xs text-yellow-300">Content Optimizer</span>
-                  </div>
-                </div>
+                      <h2 className="text-xl font-semibold text-white">AI Agent Analysis</h2>
+                      <p className="text-sm text-gray-400">Powered by specialized AI agents</p>
                     </div>
                   </div>
 
                   <div className="space-y-6">
                     <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 p-6 rounded-xl border border-blue-500/30">
-                      <h3 className="text-lg font-semibold text-blue-100 mb-3">Executive Summary</h3>
+                      <h3 className="text-lg font-semibold text-blue-100 mb-3">AI Agent Summary</h3>
                       <p className="text-blue-50 leading-relaxed">
                         {document.summary}
                       </p>
@@ -241,16 +214,16 @@ const Results: React.FC<ResultsProps> = ({ document }) => {
                             <span className="text-white">{document.industry}</span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-400">AI Model</span>
-                            <span className="text-white">GPT-4 + Vision</span>
+                            <span className="text-gray-400">Primary Agent</span>
+                            <span className="text-white">Resume Generation</span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-400">Fact-Checking</span>
-                            <span className="text-white">Perplexity AI</span>
+                            <span className="text-gray-400">Tasks Completed</span>
+                            <span className="text-white">247</span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-gray-400">Language</span>
-                            <span className="text-white">English</span>
+                            <span className="text-gray-400">Compliance Agent</span>
+                            <span className="text-white">Active (1,247 tasks)</span>
                           </div>
                         </div>
                       </div>
