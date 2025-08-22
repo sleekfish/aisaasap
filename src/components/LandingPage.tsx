@@ -32,29 +32,24 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
 
   const features = [
     {
-      icon: <Users className="w-8 h-8" />,
-      title: 'Resume Generation',
-      description: 'Create, edit, and optimize professional resumes with AI assistance - 247 tasks completed'
-    },
-    {
-      icon: <FileText className="w-8 h-8" />,
-      title: 'Medical Summarization',
-      description: 'Summarize medical reports, radiology, and sonography into findings and plain language - 89 tasks completed'
-    },
-    {
-      icon: <Clock className="w-8 h-8" />,
-      title: 'Pre-Call Briefing',
-      description: 'Prepare key points and summaries before important calls and meetings - 156 tasks completed'
-    },
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: 'Web Extraction',
-      description: 'Extract structured information from websites with precision and speed - 392 tasks completed'
+      icon: <Brain className="w-8 h-8" />,
+      title: 'Document Intelligence Agent',
+      description: 'Advanced AI agent with 1,847+ tasks completed. Processes any document type with 98%+ accuracy and contextual understanding'
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: 'Safety & Compliance',
-      description: 'Ensure compliance, keyword detection, and safe document handling - 1,247 tasks completed'
+      title: 'Compliance Guardian Agent',
+      description: '2,341+ compliance tasks completed. Ensures HIPAA, SOC 2, GDPR compliance with automated risk detection and mitigation'
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: 'Healthcare Analytics Agent',
+      description: '923+ medical tasks completed. Specialized in clinical documentation, patient records, and medical research analysis'
+    },
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: 'Contract Intelligence Agent',
+      description: '654+ legal tasks completed. Analyzes contracts, identifies risks, extracts key terms, and ensures regulatory compliance'
     }
   ];
 

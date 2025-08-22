@@ -193,6 +193,34 @@ const Results: React.FC<ResultsProps> = ({ document }) => {
                     <div>
                       <h2 className="text-xl font-semibold text-white">AI-Generated Summary</h2>
                       <p className="text-sm text-gray-400">Powered by GPT-4 and Perplexity AI</p>
+                
+                {/* AI Agents Status */}
+                <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
+                  <div className="flex items-center space-x-2 p-2 bg-blue-900/20 rounded-lg border border-blue-500/30">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-blue-300">Document Intelligence</span>
+                  </div>
+                  <div className="flex items-center space-x-2 p-2 bg-green-900/20 rounded-lg border border-green-500/30">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-green-300">Healthcare Analytics</span>
+                  </div>
+                  <div className="flex items-center space-x-2 p-2 bg-purple-900/20 rounded-lg border border-purple-500/30">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-purple-300">Contract Intelligence</span>
+                  </div>
+                  <div className="flex items-center space-x-2 p-2 bg-orange-900/20 rounded-lg border border-orange-500/30">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-orange-300">Perplexity Fact-Check</span>
+                  </div>
+                  <div className="flex items-center space-x-2 p-2 bg-red-900/20 rounded-lg border border-red-500/30">
+                    <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-red-300">Compliance Guardian</span>
+                  </div>
+                  <div className="flex items-center space-x-2 p-2 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+                    <span className="text-xs text-yellow-300">Content Optimizer</span>
+                  </div>
+                </div>
                     </div>
                   </div>
 

@@ -400,8 +400,8 @@ const Settings: React.FC<SettingsProps> = ({ user }) => {
 
                         <div className="flex items-center justify-between p-4 bg-blue-900/20 rounded-lg border border-blue-500/30">
                           <div>
-                            <p className="font-medium text-blue-100">Perplexity AI Integration</p>
-                            <p className="text-sm text-blue-200">Enable real-time fact-checking and verification</p>
+                            <p className="font-medium text-blue-100">AI Agent Orchestration</p>
+                            <p className="text-sm text-blue-200">Enable multi-agent processing with Document Intelligence, Healthcare Analytics, Contract Intelligence, Perplexity Fact-Check, and Compliance Guardian agents</p>
                           </div>
                           <input
                             type="checkbox"
