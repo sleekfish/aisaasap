@@ -32,24 +32,29 @@ const LandingPage: React.FC<LandingPageProps> = ({ onLogin }) => {
 
   const features = [
     {
-      icon: <Brain className="w-8 h-8" />,
-      title: 'AI-Powered Analysis',
-      description: 'GPT-4 and Perplexity AI process documents with 98%+ accuracy and real-time fact-checking'
+      icon: <Users className="w-8 h-8" />,
+      title: 'Resume Generation',
+      description: 'Create, edit, and optimize professional resumes with AI assistance - 247 tasks completed'
     },
     {
-      icon: <Shield className="w-8 h-8" />,
-      title: 'Enterprise Security',
-      description: 'HIPAA, SOC 2, GDPR compliant with military-grade encryption and zero-trust architecture'
+      icon: <FileText className="w-8 h-8" />,
+      title: 'Medical Summarization',
+      description: 'Summarize medical reports, radiology, and sonography into findings and plain language - 89 tasks completed'
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Lightning Fast',
-      description: 'Process documents in under 2 seconds with 99.99% uptime and global CDN delivery'
+      icon: <Clock className="w-8 h-8" />,
+      title: 'Pre-Call Briefing',
+      description: 'Prepare key points and summaries before important calls and meetings - 156 tasks completed'
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: '25+ Languages',
-      description: 'Native support for global teams with real-time translation and cultural context'
+      title: 'Web Extraction',
+      description: 'Extract structured information from websites with precision and speed - 392 tasks completed'
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: 'Safety & Compliance',
+      description: 'Ensure compliance, keyword detection, and safe document handling - 1,247 tasks completed'
     }
   ];
 

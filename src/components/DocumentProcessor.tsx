@@ -404,20 +404,24 @@ const DocumentProcessor: React.FC<DocumentProcessorProps> = ({ user, onDocumentP
               </p>
               <div className="flex items-center justify-center space-x-6 text-xs text-gray-500">
                 <div className="flex items-center">
-                  <Brain className="w-4 h-4 mr-1" />
-                  GPT-4 Analysis
+                  <Users className="w-4 h-4 mr-1" />
+                  Resume Generation
                 </div>
                 <div className="flex items-center">
-                  <Search className="w-4 h-4 mr-1" />
-                  Perplexity AI
+                  <FileText className="w-4 h-4 mr-1" />
+                  Medical Summarization
+                </div>
+                <div className="flex items-center">
+                  <Clock className="w-4 h-4 mr-1" />
+                  Pre-Call Briefing
                 </div>
                 <div className="flex items-center">
                   <Globe className="w-4 h-4 mr-1" />
-                  25+ Languages
+                  Web Extraction
                 </div>
                 <div className="flex items-center">
                   <Shield className="w-4 h-4 mr-1" />
-                  HIPAA Compliant
+                  Safety & Compliance
                 </div>
               </div>
             </div>

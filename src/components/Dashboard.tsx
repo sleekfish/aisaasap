@@ -322,29 +322,47 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-blue-900/50 rounded-full flex items-center justify-center">
-                    <Brain className="w-4 h-4 text-blue-400" />
+                    <Users className="w-4 h-4 text-blue-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-white">GPT-4 Analysis</p>
-                    <p className="text-sm text-gray-400">Advanced NLP processing</p>
+                    <p className="font-medium text-white">Resume Generation</p>
+                    <p className="text-sm text-gray-400">247 tasks completed</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-900/50 rounded-full flex items-center justify-center">
-                    <Zap className="w-4 h-4 text-green-400" />
+                    <Activity className="w-4 h-4 text-green-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-white">Perplexity AI</p>
-                    <p className="text-sm text-gray-400">Real-time fact-checking</p>
+                    <p className="font-medium text-white">Medical Summarization</p>
+                    <p className="text-sm text-gray-400">89 tasks completed</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-purple-900/50 rounded-full flex items-center justify-center">
-                    <Shield className="w-4 h-4 text-purple-400" />
+                    <Clock className="w-4 h-4 text-purple-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-white">Secure Processing</p>
-                    <p className="text-sm text-gray-400">End-to-end encryption</p>
+                    <p className="font-medium text-white">Pre-Call Briefing</p>
+                    <p className="text-sm text-gray-400">156 tasks completed</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-orange-900/50 rounded-full flex items-center justify-center">
+                    <Globe className="w-4 h-4 text-orange-400" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Web Extraction</p>
+                    <p className="text-sm text-gray-400">392 tasks completed</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-red-900/50 rounded-full flex items-center justify-center">
+                    <Shield className="w-4 h-4 text-red-400" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">Safety & Compliance</p>
+                    <p className="text-sm text-gray-400">1,247 tasks completed</p>
                   </div>
                 </div>
               </div>
